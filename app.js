@@ -1,10 +1,15 @@
 const express=require("express");
-const app=express();
-const PORT=8080;
+require("dotenv").config();
 
-app.get("/",(req,res)=>{
-    res.send("Welcome to FocusFlow");
-});
+const app=express();
+
+const PORT=process.env.PORT||8080;
+
+
+app.set("view engine","ejs");
+
+const mainRoutes=require("./routes/mainRoutes");
+app.use("/",mainRoutes);
 
 app.listen(PORT,()=>{
     console.log(`app is running on port ${PORT}`);
