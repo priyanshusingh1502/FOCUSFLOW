@@ -37,3 +37,33 @@ footer{
     padding: 20px;
     background-color: #1f2937;
 }
+
+.hero{
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #60a5fa;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #3b82f6;
+}
