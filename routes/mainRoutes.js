@@ -14,6 +14,11 @@ router.get("/register",(req,res)=>{
     res.render("register");
 });
 
+router.post("/register",(req,res)=>{
+    console.log(req.body);
+    res.redirect("/dashboard");
+});
+
 router.get("/dashboard",(req,res)=>{
     res.render("dashboard");
 });

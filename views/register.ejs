@@ -10,7 +10,35 @@
     
     <%- include("partials/navbar") %>
 
-    <h1>Register Page</h1>
+    <div class="form-container">
+        <h1>Create Account</h1>
+        <form action="/register" method="POST">
+
+            <input
+             type="text"
+             name="username"
+             placeholder="Enter username"
+             required
+             >
+
+             <input
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              required
+              >
+
+              <input
+               type="password"
+               name="password"
+               placeholder="Enter password"
+               required
+               >
+
+               <button type="submit">Register</button>
+               
+        </form>
+    </div>
 
     <%- include("partials/footer") %>
 </body>
