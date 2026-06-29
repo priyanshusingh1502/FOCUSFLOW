@@ -10,7 +10,32 @@
     
     <%- include("partials/navbar") %>
 
-    <h1>Login Page</h1>
+    <div class="form-container">
+
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                required
+            >
+
+            <input 
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </div>
 
     <%- include("partials/footer") %>
 </body>
